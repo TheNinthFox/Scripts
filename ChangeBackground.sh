@@ -11,6 +11,7 @@ if [ $# = 0 ]; then
 fi
 
 if [ -f $1 ]; then
+	
 	cp $1 /usr/share/backgrounds/background.jpg
 	nitrogen --set-centered --save /usr/share/backgrounds/background.jpg
 	update-grub
