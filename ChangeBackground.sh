@@ -10,11 +10,11 @@ if [ $# = 0 ]; then
 	exit 0;
 fi
 
-if [ -f $1 ]; then
+if [ -f "$1" ]; then
 	
-	cp $1 /usr/share/backgrounds/background.jpg
-	nitrogen --set-centered --save /usr/share/backgrounds/background.jpg
-	update-grub
+	cp "$1" /usr/share/backgrounds/background.png
+	nitrogen --set-centered --save /usr/share/backgrounds/background.png
+	UpdateGrub.sh
 fi
 
 exit 0;
